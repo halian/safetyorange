@@ -1,11 +1,11 @@
-# Pokémon Red and Blue
+# Pokémon Safety Orange and Health Green
 
-This is a disassembly of Pokémon Red and Blue.
+This is a hack of the split disassembly of Pokémon Red and Blue, intended to fix various glitches and bugs.
 
 It builds the following roms:
 
-* Pokemon Red (UE) [S][!].gb  `md5: 3d45c1ee9abd5738df46d2bdda8b57dc`
-* Pokemon Blue (UE) [S][!].gb `md5: 50927e843568814f7ed45ec4f944bd8b`
+* safetyorange.gbc `md5: aab1d64531ceb0d3a171cef3b0abe08a`
+* healthgreen.gbc  `md5: 318e8ec69a5b242203c1f3f1edc3f188`
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
@@ -17,6 +17,7 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 * Disassembly of [**Pokémon Crystal**][pokecrystal]
 * Disassembly of [**Pokémon Pinball**][pokepinball]
 * Disassembly of [**Pokémon TCG**][poketcg]
+* Disassembly of [**Pokémon Red**][pokered]
 * Disassembly of [**Pokémon Ruby**][pokeruby]
 * Disassembly of [**Pokémon Fire Red**][pokefirered]
 * Disassembly of [**Pokémon Emerald**][pokeemerald]
@@ -28,6 +29,7 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 [pokecrystal]: https://github.com/pret/pokecrystal
 [pokepinball]: https://github.com/pret/pokepinball
 [poketcg]: https://github.com/pret/poketcg
+[pokered]: https://github.com/pret/pokered
 [pokeruby]: https://github.com/pret/pokeruby
 [pokefirered]: https://github.com/pret/pokefirered
 [pokeemerald]: https://github.com/pret/pokeemerald

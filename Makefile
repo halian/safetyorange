@@ -1,7 +1,7 @@
-roms := pokered.gbc pokeblue.gbc
+roms := safetyorange.gbc healthgreen.gbc
 
-pokered_obj := audio_red.o main_red.o text_red.o wram_red.o
-pokeblue_obj := audio_blue.o main_blue.o text_blue.o wram_blue.o
+safetyorange_obj := audio_red.o main_red.o text_red.o wram_red.o
+healthgreen_obj := audio_blue.o main_blue.o text_blue.o wram_blue.o
 
 
 ### Build tools
@@ -21,23 +21,23 @@ RGBLINK ?= $(RGBDS)rgblink
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
-.PHONY: all red blue clean tidy compare tools
+.PHONY: all orange green clean tidy compare tools
 
 all: $(roms)
-red: pokered.gbc
-blue: pokeblue.gbc
+orange: safetyorange.gbc
+greeen: healthgreen.gbc
 
 # For contributors to make sure a change didn't affect the contents of the rom.
 compare: $(roms)
 	@$(MD5) roms.md5
 
 clean:
-	rm -f $(roms) $(pokered_obj) $(pokeblue_obj) $(roms:.gbc=.sym)
+	rm -f $(roms) $(safetyorange_obj) $(healthgreen_obj) $(roms:.gbc=.sym)
 	find . \( -iname '*.1bpp' -o -iname '*.2bpp' -o -iname '*.pic' \) -exec rm {} +
 	$(MAKE) clean -C tools/
 
 tidy:
-	rm -f $(roms) $(pokered_obj) $(pokeblue_obj) $(roms:.gbc=.sym)
+	rm -f $(roms) $(safetyorange_obj) $(healthgreen_obj) $(roms:.gbc=.sym)
 	$(MAKE) clean -C tools/
 
 tools:
@@ -54,18 +54,18 @@ endif
 %.asm: ;
 
 %_red.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
-$(pokered_obj): %_red.o: %.asm $$(dep)
+$(safetyorange_obj): %_red.o: %.asm $$(dep)
 	$(RGBASM) -D _RED -h -o $@ $*.asm
 
 %_blue.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
-$(pokeblue_obj): %_blue.o: %.asm $$(dep)
+$(healthgreen_obj): %_blue.o: %.asm $$(dep)
 	$(RGBASM) -D _BLUE -h -o $@ $*.asm
 
-pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
-pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
+safetyorange_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
+healthgreen_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
 
 %.gbc: $$(%_obj)
-	$(RGBLINK) -d -n $*.sym -l pokered.link -o $@ $^
+	$(RGBLINK) -d -n $*.sym -l safetyorange.link -o $@ $^
 	$(RGBFIX) $($*_opt) $@
 	sort $*.sym -o $*.sym
 

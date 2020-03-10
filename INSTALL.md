@@ -8,17 +8,17 @@
 	sudo make install
 	cd ..
 
-	git clone https://github.com/pret/pokered
+	git clone https://github.com/carlmiller307/safetyorange
 	cd pokered
 
-To build **pokered.gbc** and **pokeblue.gbc**:
+To build **safetyorange.gbc** and **healthgreen.gbc**:
 
 	make
 
 To build them individually:
 
-	make red
-	make blue
+	make orange
+	make green
 
 
 # Mac
@@ -30,12 +30,17 @@ Then in **Terminal**, run:
 	xcode-select --install
 	brew install rgbds
 
-	git clone https://github.com/pret/pokered
+	git clone https://github.com/carlmiller307/safetyorange
 	cd pokered
 
-To build **pokered.gbc** and **pokeblue.gbc**:
+To build **safetyorange.gbc** and **healthgreen.gbc**:
 
 	make
+
+To build them individually:
+
+	make orange
+	make green
 
 
 # Windows
@@ -52,9 +57,14 @@ Then download [**rgbds**](https://github.com/rednex/rgbds/releases/): the latest
 
 In the **Cygwin terminal**, enter these commands:
 
-	git clone https://github.com/pret/pokered
+	git clone https://github.com/carlmiller307/safetyorange
 	cd pokered
 
-To build **pokered.gbc** and **pokeblue.gbc**:
+To build **safetyorange.gbc** and **healthgreen.gbc**:
 
 	make
+
+To build them individually:
+
+	make orange
+	make green
