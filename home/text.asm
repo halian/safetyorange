@@ -97,19 +97,19 @@ endm
 	dict $49, Char49 ; page
 	dict $52, Char52 ; player
 	dict $53, Char53 ; rival
-	dict $54, Char54 ; POKé
+	dict $54, Char54 ; Poké
 	dict $5B, Char5B ; PC
-	dict $5E, Char5E ; ROCKET
+	dict $5E, Char5E ; Rocket
 	dict $5C, Char5C ; TM
-	dict $5D, Char5D ; TRAINER
+	dict $5D, Char5D ; Trainer
 	dict $55, Char55 ; cont
-	dict $56, Char56 ; 6 dots
+	dict $56, Char56 ; 3 dots
 	dict $57, Char57 ; done
 	dict $58, Char58 ; prompt
 	dict $4A, Char4A ; PKMN
 	dict $5F, Char5F ; dex
-	dict $59, Char59 ; TARGET
-	dict $5A, Char5A ; USER
+	dict $59, Char59 ; Target
+	dict $5A, Char5A ; User
 
 	ld [hli], a
 	call PrintLetterDelay
@@ -159,12 +159,12 @@ Char5E:: ; ROCKET
 	ld de, Char5EText
 	jr FinishDTE
 
-Char54:: ; POKé
+Char54:: ; Poké
 	push de
 	ld de, Char54Text
 	jr FinishDTE
 
-Char56:: ; ……
+Char56:: ; …
 	push de
 	ld de, Char56Text
 	jr FinishDTE
@@ -216,15 +216,15 @@ FinishDTE::
 Char5CText::
 	db "TM@"
 Char5DText::
-	db "TRAINER@"
+	db "Trainer@"
 Char5BText::
 	db "PC@"
 Char5EText::
-	db "ROCKET@"
+	db "Rocket@"
 Char54Text::
-	db "POKé@"
+	db "Poké@"
 Char56Text::
-	db "……@"
+	db "…@"
 Char5AText::
 	db "Enemy @"
 Char4AText::
@@ -641,7 +641,7 @@ TextCommand0C::
 	ld h, b
 	ld l, c
 .loop
-	ld a, "…"
+	ld a, "..."
 	ld [hli], a
 	push de
 	call Joypad

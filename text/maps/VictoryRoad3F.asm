@@ -9,8 +9,8 @@ _VictoryRoad3EndBattleText2::
 	prompt
 
 _VictoryRoad3AfterBattleText2::
-	text "You beat GIOVANNI"
-	line "of TEAM ROCKET?"
+	text "You beat Giovanni"
+	line "of Team Rocket?"
 	done
 
 _VictoryRoad3BattleText3::
@@ -19,8 +19,7 @@ _VictoryRoad3BattleText3::
 	done
 
 _VictoryRoad3EndBattleText3::
-	text "I'm"
-	line "furious!"
+	text "I'm furious!"
 	prompt
 
 _VictoryRoad3AfterBattleText3::
@@ -41,7 +40,7 @@ _VictoryRoad3EndBattleText4::
 _VictoryRoad3AfterBattleText4::
 	text "All trainers here"
 	line "are headed to the"
-	cont "#MON LEAGUE!"
+	cont "#mon League!"
 	cont "Be careful!"
 	done
 

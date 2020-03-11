@@ -8,6 +8,6 @@ _SchoolText2::
 	text "Okay!"
 
 	para "Be sure to read"
-	line "the blackboard"
+	line "the chalkboard"
 	cont "carefully!"
 	done

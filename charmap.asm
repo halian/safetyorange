@@ -152,13 +152,14 @@ charmap "@", $50
 charmap "<PLAYER>", $52
 charmap "<RIVAL>", $53
 charmap "#", $54
-;charmap "POKé", $54
+;charmap "Poké", $54
+charmap "...", $56
 charmap "<TARGET>", $59
 charmap "<USER>", $5A
 charmap "′", $71
 charmap "″", $73
 charmap "№", $74
-charmap "…", $75
+charmap "‽", $75
 
 charmap "┌", $79
 charmap "─", $7A

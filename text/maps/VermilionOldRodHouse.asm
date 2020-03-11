@@ -1,8 +1,8 @@
 _VermilionHouse2Text_560b1::
-	text "I'm the FISHING"
-	line "GURU!"
+	text "I'm the"
+	line "Fishing Guru!"
 
-	para "I simply Looove"
+	para "I simply love"
 	line "fishing!"
 
 	para "Do you like to"

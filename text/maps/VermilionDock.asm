@@ -1,3 +1,3 @@
 _VermilionDockText1::
-	text ""
+	text "Ow, my back..."
 	done
