@@ -95,7 +95,7 @@ _VermilionCityText7::
 _VermilionCityText8::
 	text "Notice!"
 
-	para "ROUTE 12 may be"
+	para "Route 12 may be"
 	line "blocked off by"
 	cont "sleeping #mon."
 
@@ -115,7 +115,7 @@ _VermilionCityText11::
 _VermilionCityText12::
 	text "Vermilion City"
 	line "#mon Gym"
-	cont "LEADER: LT. Surge"
+	cont "Leader: Lt. Surge"
 
 	para "The Lightning"
 	line "American!"
