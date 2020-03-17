@@ -4,8 +4,8 @@ This is a hack of the split disassembly of Pokémon Red and Blue, intended to fi
 
 It builds the following roms:
 
-* safetyorange.gbc `md5: aab1d64531ceb0d3a171cef3b0abe08a`
-* healthgreen.gbc  `md5: 318e8ec69a5b242203c1f3f1edc3f188`
+* safetyorange.gbc `md5: 95a0d6d69b16e2c5c89985731b04016c`
+* healthgreen.gbc  `md5: fce953908ada1fa594f1e4502d8f72ff`
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
